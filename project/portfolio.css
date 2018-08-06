@@ -1,0 +1,10 @@
+.license {
+    height: 200px;
+    margin: 20px auto;
+    /* Enable scroll bars. Source: https://www.w3schools.com/cssref/pr_pos_overflow.asp  */
+    overflow: scroll
+}
+
+.btn {
+    margin: 10px auto;
+}

@@ -8,10 +8,10 @@
 <body>
 
 	<!-- Bootstrap Nav bar. Source: https://getbootstrap.com/docs/4.1/components/navbar/ -->
-	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	<nav class="navbar navbar-expand navbar-light bg-light">
 	  <a class="navbar-brand" href="index.html">Joe Testman Photography</a>
 
-	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	  <div class="collapse navbar-collapse" id="main-navbar">
 	    <ul class="navbar-nav mr-auto">
 	      <li class="nav-item active">
 	        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
@@ -25,12 +25,14 @@
 	          Portfolio
 	        </a>
 	        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="portfolio.html">All</a>
+              <div class="dropdown-divider"></div>
 	          <a class="dropdown-item" href="portfolio.html#landscapes">Landscapes</a>
 	          <a class="dropdown-item" href="portfolio.html#product">Product</a>
 			  <a class="dropdown-item" href="portfolio.html#food">Food</a>
 			  <a class="dropdown-item" href="portfolio.html#events">Events</a>
 	          <div class="dropdown-divider"></div>
-	          <a class="dropdown-item" href="portfolio.html">All</a>
+              <a class="dropdown-item" href="portfolio.html#download">Download samples</a>
 	        </div>
 	      </li>
 		  <li class="nav-item">
@@ -43,17 +45,21 @@
 	  </div>
 	</nav>
 
-	<div class="d-lg-none">FIXME: testing mobile only</div>
+	<div class="d-md-none">Mobile version coming soon!<br>
+		<img class="d-block w-auto h-auto mx-auto"
+		src="https://source.unsplash.com/T7K4aEPoGGk/400x300" alt="landscape photo">
+	</div>
 
 	<!-- Bootstrap carousel. Source: https://getbootstrap.com/docs/4.1/components/carousel/ -->
-	<div id="carouselExampleIndicators" class="d-none d-lg-block carousel slide carousel-fade" data-ride="carousel">
+	<div id="home-carousel" class="d-none d-md-block carousel slide carousel-fade" data-ride="carousel">
 		<ol class="carousel-indicators">
-			<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-			<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-			<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-			<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-			<li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-			<li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+			<li data-target="#home-carousel" data-slide-to="0" class="active"></li>
+			<li data-target="#home-carousel" data-slide-to="1"></li>
+			<li data-target="#home-carousel" data-slide-to="2"></li>
+			<li data-target="#home-carousel" data-slide-to="3"></li>
+			<li data-target="#home-carousel" data-slide-to="4"></li>
+			<li data-target="#home-carousel" data-slide-to="5"></li>
+			<li data-target="#home-carousel" data-slide-to="6"></li>
 		</ol>
 		<div class="carousel-inner">
 			<div class="carousel-item active" id="carousel-item-1">
@@ -82,7 +88,7 @@
 				<div class="carousel-caption">
     			<h1>Product</h1>
 				<p>Memorable product photography from Joe Testman photography.
-					<a href="contact.html">Hire us</a> to help kickstart your
+					<a href="contact.html">Hire Joe</a> to help kickstart your
 					marketing campaign.</p>
   				</div>
 			</div>
@@ -92,7 +98,7 @@
 				<div class="carousel-caption text-body">
     			<h1>Product</h1>
 				<p>Memorable product photography from Joe Testman photography.
-					<a href="contact.html">Hire us</a> to help kickstart your
+					<a href="contact.html">Hire Joe</a> to help kickstart your
 					marketing campaign.</p>
   				</div>
 			</div>
@@ -102,7 +108,7 @@
 				<div class="carousel-caption">
     			<h1>Food</h1>
 				<p>Instaworthy food photography from Joe Testman photography.
-					<a href="contact.html">Hire us</a> to put your restaurant on
+					<a href="contact.html">Hire Joe</a> to put your restaurant on
 					the social-media map.</p>
   				</div>
 			</div>
@@ -112,7 +118,7 @@
 				<div class="carousel-caption">
     			<h1>Food</h1>
 				<p>Instaworthy food photography from Joe Testman photography.
-					<a href="contact.html">Hire us</a> to put your restaurant on
+					<a href="contact.html">Hire Joe</a> to put your restaurant on
 					the social-media map.</p>
   				</div>
 			</div>
@@ -122,16 +128,16 @@
 				<div class="carousel-caption">
     			<h1>Events</h1>
 				<p>Event photography from Joe Testman photography. <a
-					href="contact.html">Hire us</a> to
+					href="contact.html">Hire Joe</a> to
 					capture the magic of your next event.</p>
   				</div>
 			</div>
 		</div>
-		<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+		<a class="carousel-control-prev" href="#home-carousel" role="button" data-slide="prev">
 			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
 			<span class="sr-only">Previous</span>
 		</a>
-		<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+		<a class="carousel-control-next" href="#home-carousel" role="button" data-slide="next">
 			<span class="carousel-control-next-icon" aria-hidden="true"></span>
 			<span class="sr-only">Next</span>
 		</a>
@@ -144,8 +150,8 @@
 				<div class="card">
 					<div class="card-body">
 						<h5 class="card-title">About me</h5>
-						<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-						<a href="#" class="btn btn-primary">Go somewhere</a>
+						<p class="card-text">Meet photographer Joe Testman.</p>
+						<a href="about.html" class="btn btn-primary">meet Joe</a>
 					</div>
 				</div>
 			</div>
@@ -153,8 +159,8 @@
 				<div class="card">
 					<div class="card-body">
 						<h5 class="card-title">Portfolio</h5>
-						<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-						<a href="#" class="btn btn-primary">View <span class="badge badge-light">4</span> images</a>
+						<p class="card-text">View a few of my photos, and download samples images.</p>
+						<a href="portfolio.html" class="btn btn-primary">View <span class="badge badge-light">12</span> images</a>
 					</div>
 				</div>
 			</div>
@@ -165,8 +171,8 @@
 				<div class="card">
 					<div class="card-body">
 						<h5 class="card-title">For hire</h5>
-						<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-						<a href="#" class="btn btn-primary">Go somewhere</a>
+						<p class="card-text">Hire Joe for your next event, or to shoot your new product.</p>
+						<a href="contact.html" class="btn btn-primary">Hire Joe</a>
 					</div>
 				</div>
 			</div>
@@ -174,21 +180,15 @@
 				<div class="card">
 					<div class="card-body">
 						<h5 class="card-title">Contact</h5>
-						<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-						<a href="#" class="btn btn-primary">View <span class="badge badge-light">12</span> images</a>
+						<p class="card-text">Contact Joe if you'd like to license an image, or
+							if you're interested in connecting professionally.</p>
+						<a href="contact.html" class="btn btn-primary">Contact Joe</a>
 					</div>
 				</div>
 
 		</div></div>
 
 	</div>
-
-	<script>
-	let carouselItem1 = document.getElementById("carousel-item-1");
-	console.log("item 1 width:");
-	console.log(carouselItem1.style);
-	</script>
-
 
 	<!-- Include jQuery and the Bootstrap JS at the end of the body, as per Bootstrap recommendations. -->
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

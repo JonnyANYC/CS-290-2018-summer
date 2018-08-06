@@ -1,0 +1,5 @@
+#credits {
+    height: 500px;
+    /* Enable scroll bars. Source: https://www.w3schools.com/cssref/pr_pos_overflow.asp  */
+    overflow: scroll
+}
